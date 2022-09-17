@@ -23,6 +23,8 @@ jobs:
         node-version: [16.x]
     env:
       Greeting: Hello2
+      REACT_APP_NODE_ENV: prod-actions
+      REACT_APP_API_URL: production.com.actions
     permissions:
       packages: write
       contents: read
@@ -40,6 +42,6 @@ jobs:
         run: |
           npm install
           npm run build
-          npm run start
+          npm run test
         env:
           First_Name: Mona
