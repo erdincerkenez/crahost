@@ -28,7 +28,7 @@
   "scripts": {
     "start": "REACT_APP_NODE_ENV=development REACT_APP_API_URL=development.com react-scripts start",
     "start-prod": "REACT_APP_NODE_ENV=production REACT_APP_API_URL=production.com react-scripts start ",
-    "build": "react-scripts build",
+    "build": "REACT_APP_NODE_ENV=production REACT_APP_URL=canli react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy" : "gh-pages -d build"
